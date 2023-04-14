@@ -1,0 +1,170 @@
+{
+  "appservice": {
+    "dir": "AppService",
+    "source": "specification/web/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.AppService.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2019-08"
+  },
+  "authorization": {
+    "dir": "Graph.RBAC",
+    "source": "specification/authorization/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.Graph.RBAC.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2018-09-01-preview"
+  },
+  "batchai": {
+    "dir": "BatchAI",
+    "source": "specification/batchai/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.BatchAI.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2018-05"
+  },
+  "cdn": {
+    "dir": "Cdn",
+    "source": "specification/cdn/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.Cdn.Fluent",
+    "args": "--payload-flattening-threshold=2 --tag=package-2017-10"
+  },
+  "compute": {
+    "dir": "Compute",
+    "source": "specification/compute/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.Compute.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2020-06-30 --remove-inner=VirtualMachineInstanceView,VirtualMachineScaleSetVMInstanceView"
+  },
+  "containerinstance": {
+    "dir": "ContainerInstance",
+    "source": "specification/containerinstance/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.ContainerInstance.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2018-10"
+  },
+  "containerregistry": {
+    "dir": "ContainerRegistry",
+    "source": "specification/containerregistry/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.ContainerRegistry.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2018-09"
+  },
+  "containerservice": {
+    "dir": "ContainerService",
+    "source": "specification/containerservice/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.ContainerService.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2020-12 --title=ContainerServiceManagementClient --description=\"Container Service Client\""
+  },
+  "cosmosdb": {
+    "dir": "CosmosDB",
+    "source": "specification/cosmos-db/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.CosmosDB.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2019-12 --ignore-request-uri-redirect"
+  },
+  "dns": {
+    "dir": "Dns",
+    "source": "specification/dns/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.Dns.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2018-03-preview"
+  },
+  "eventhub": {
+    "dir": "EventHub",
+    "source": "specification/eventhub/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.EventHub.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2017-04"
+  },
+  "features": {
+    "dir": "ResourceManager",
+    "source": "specification/resources/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.ResourceManager.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-features-2015-12"
+  },
+  "graphrbac": {
+    "dir": "Graph.RBAC",
+    "source": "specification/graphrbac/data-plane/readme.md",
+    "package": "Microsoft.Azure.Management.Graph.RBAC.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=1.6"
+  },
+  "keyvault": {
+    "dir": "KeyVault",
+    "source": "specification/keyvault/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.KeyVault.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2018-02"
+  },
+  "locks": {
+    "dir": "Locks",
+    "source": "specification/resources/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.Locks.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-locks-2016-09"
+  },
+  "monitor": {
+    "dir": "Monitor",
+    "source": "specification/monitor/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.Monitor.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2019-06 --add-inner=AutoscaleProfile,ScaleRule"
+  },
+  "network": {
+    "dir": "Network",
+    "source": "specification/network/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.Network.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2019-09"
+  },
+  "privatedns": {
+    "dir": "PrivateDns",
+    "source": "specification/privatedns/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.PrivateDns.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2018-09"
+  }, 
+  "policy": {
+    "dir": "ResourceManager",
+    "source": "specification/resources/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.ResourceManager.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-policy-2019-06"
+  },  
+  "redis": {
+    "dir": "RedisCache",
+    "source": "specification/redis/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.Redis.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2018-03"
+  },
+  "resources": {
+    "dir": "ResourceManager",
+    "source": "specification/resources/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.ResourceManager.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-resources-2021-01"
+  },
+  "search": {
+    "dir": "Search",
+    "source": "specification/search/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.Search.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2015-08"
+  },
+  "servicebus": {
+    "dir": "ServiceBus",
+    "source": "specification/servicebus/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.ServiceBus.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2015-08"
+  },
+  "sql": {
+    "dir": "Sql",
+    "source": "specification/sql/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.Sql.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-composite-v1"
+  },
+  "storage": {
+    "dir": "Storage",
+    "source": "specification/storage/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.Storage.Fluent",
+    "args": "--payload-flattening-threshold=2 --tag=package-2018-11"
+  },
+  "subscriptions": {
+    "dir": "ResourceManager",
+    "source": "specification/resources/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.ResourceManager.Fluent",
+    "args": "--tag=package-subscriptions-2019-06"
+  },
+  "trafficmanager": {
+    "dir": "TrafficManager",
+    "source": "specification/trafficmanager/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.TrafficManager.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2018-04"
+  },
+  "msi": {
+    "dir": "Msi",
+    "source": "specification/msi/resource-manager/readme.md",
+    "package": "Microsoft.Azure.Management.Msi.Fluent",
+    "args": "--payload-flattening-threshold=1 --tag=package-2018-11-30"
+  }
+}

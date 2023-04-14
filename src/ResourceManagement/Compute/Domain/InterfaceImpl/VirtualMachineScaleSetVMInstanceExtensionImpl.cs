@@ -1,0 +1,123 @@
+// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License. See License.txt in the project root for license information.
+
+namespace Microsoft.Azure.Management.Compute.Fluent
+{
+    using Microsoft.Azure.Management.Compute.Fluent.Models;
+    using Microsoft.Azure.Management.ResourceManager.Fluent.Core;
+    using System.Collections.Generic;
+
+    internal partial class VirtualMachineScaleSetVMInstanceExtensionImpl
+    {
+        /// <summary>
+        /// Gets true if this extension is configured to upgrade automatically when a new minor version of the
+        /// extension image that this extension based on is published.
+        /// </summary>
+        bool Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineExtensionBase.AutoUpgradeMinorVersionEnabled
+        {
+            get
+            {
+                return this.AutoUpgradeMinorVersionEnabled();
+            }
+        }
+
+        /// <summary>
+        /// Gets the instance view of the scale set virtual machine extension.
+        /// </summary>
+        Models.VirtualMachineExtensionInstanceView Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineScaleSetVMInstanceExtension.InstanceView
+        {
+            get
+            {
+                return this.InstanceView();
+            }
+        }
+
+        /// <summary>
+        /// Gets the name of the resource.
+        /// </summary>
+        string Microsoft.Azure.Management.ResourceManager.Fluent.Core.IHasName.Name
+        {
+            get
+            {
+                return this.Name();
+            }
+        }
+
+        /// <summary>
+        /// Gets the provisioning state of the virtual machine extension.
+        /// </summary>
+        string Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineExtensionBase.ProvisioningState
+        {
+            get
+            {
+                return this.ProvisioningState();
+            }
+        }
+
+        /// <summary>
+        /// Gets the public settings of the virtual machine extension as key value pairs.
+        /// </summary>
+        System.Collections.Generic.IReadOnlyDictionary<string, object> Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineExtensionBase.PublicSettings
+        {
+            get
+            {
+                return this.PublicSettings();
+            }
+        }
+
+        /// <summary>
+        /// Gets the public settings of the virtual machine extension as a JSON string.
+        /// </summary>
+        string Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineExtensionBase.PublicSettingsAsJsonString
+        {
+            get
+            {
+                return this.PublicSettingsAsJsonString();
+            }
+        }
+
+        /// <summary>
+        /// Gets the publisher name of the virtual machine extension image this extension is created from.
+        /// </summary>
+        string Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineExtensionBase.PublisherName
+        {
+            get
+            {
+                return this.PublisherName();
+            }
+        }
+
+        /// <summary>
+        /// Gets the tags for this virtual machine extension.
+        /// </summary>
+        System.Collections.Generic.IReadOnlyDictionary<string, string> Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineExtensionBase.Tags
+        {
+            get
+            {
+                return this.Tags();
+            }
+        }
+
+        /// <summary>
+        /// Gets the type name of the virtual machine extension image this extension is created from.
+        /// </summary>
+        string Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineExtensionBase.TypeName
+        {
+            get
+            {
+                return this.TypeName();
+            }
+        }
+
+        /// <summary>
+        /// Gets the version name of the virtual machine extension image this extension is created from.
+        /// </summary>
+        string Microsoft.Azure.Management.Compute.Fluent.IVirtualMachineExtensionBase.VersionName
+        {
+            get
+            {
+                return this.VersionName();
+            }
+        }
+    }
+}

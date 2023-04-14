@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('AzSdk.test.reference.props'))" />
+  <PropertyGroup>
+    <Description>Fluent Unit Tests</Description>
+    <AssemblyName>Fluent.Unit.Tests</AssemblyName>
+    <PackageId>Fluent.Unit.Tests</PackageId>
+    <VersionPrefix>1.0.0</VersionPrefix>
+  </PropertyGroup>
+<!--  
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
+  </PropertyGroup>
+-->  
+  <ItemGroup>  
+    <PackageReference Include="CoreFtp" Version="1.4.0" />  
+    <PackageReference Include="xunit" Version="2.4.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ResourceManagement\Azure.Fluent\Microsoft.Azure.Management.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\AppService\Microsoft.Azure.Management.AppService.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\BatchAI\Microsoft.Azure.Management.BatchAI.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\Cdn\Microsoft.Azure.Management.Cdn.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\Compute\Microsoft.Azure.Management.Compute.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\ContainerRegistry\Microsoft.Azure.Management.ContainerRegistry.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\ContainerService\Microsoft.Azure.Management.ContainerService.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\Dns\Microsoft.Azure.Management.Dns.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\CosmosDB\Microsoft.Azure.Management.CosmosDB.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\EventHub\Microsoft.Azure.Management.EventHub.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\Graph.RBAC\Microsoft.Azure.Management.Graph.RBAC.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\Msi\Microsoft.Azure.Management.Msi.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\KeyVault\Microsoft.Azure.Management.KeyVault.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\Network\Microsoft.Azure.Management.Network.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\PrivateDns\Microsoft.Azure.Management.PrivateDns.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\RedisCache\Microsoft.Azure.Management.Redis.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\ResourceManager\Microsoft.Azure.Management.ResourceManager.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\ServiceBus\Microsoft.Azure.Management.ServiceBus.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\Sql\Microsoft.Azure.Management.Sql.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\Storage\Microsoft.Azure.Management.Storage.Fluent.csproj" />
+    <ProjectReference Include="..\..\src\ResourceManagement\TrafficManager\Microsoft.Azure.Management.TrafficManager.Fluent.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <None Update="Assets\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="SessionRecords\**\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
